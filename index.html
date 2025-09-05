@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitrix24 Real Estate CRM - Transform Your Property Business | Corporate Intellect Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .pulse-button {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+            }
+        }
+
+        .stats-counter {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #3b82f6;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- Hero Section -->
+   <section class="gradient-bg text-white py-20">
+    <div class="flex items-center justify-between mb-8">
+        <!-- Logo with left margin -->
+        <img src="/cis.png" alt="cis logo" class="h-40 ml-28">
+
+        <!-- Text inside red box with right margin -->
+        <h2 class="font-bold text-2xl bg-red-500 text-white px-6 py-3 rounded-lg mr-28">
+            Free Webinar
+        </h2>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- LEFT COLUMN -->
+            <div>
+                <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Transform Your Business with
+                    <span class="text-yellow-300">Bitrix24 CRM</span>
+                </h1>
+                <p class="text-xl mb-8 text-gray-200 leading-relaxed">
+                    Join our exclusive webinar to learn how to safeguard your business, implement smart automation,
+                    and stay ahead of competitors in 2025.
+                </p>
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                        <span>Proven strategies to capture and convert every lead</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                        <span>How to secure your data with automation-first systems</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                        <span>Boost sales performance by eliminating human errors</span>
+                    </div>
+                </div>
+                <button
+                    class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-4 px-8 rounded-lg text-lg pulse-button transition-all duration-300 transform hover:scale-105">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    Resgister Now
+                </button>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="bg-gray-800 rounded-lg p-8 text-center relative">
+                <!-- Placeholder content -->
+                <div id="videoPlaceholder" class="bg-gray-700 rounded-lg h-64 flex items-center justify-center mb-4">
+                    <div class="text-center">
+                        <i class="fas fa-play-circle text-6xl text-yellow-500 mb-4"></i>
+                        <p class="text-gray-300">Watch how Al Majid Properties increased their sales by 285% in just
+                            6 months</p>
+                        <p class="text-sm text-gray-400 mt-2">90-second success story</p>
+                    </div>
+                </div>
+
+                <!-- Hidden video (will show when button is clicked) -->
+                <video id="successVideo" class="rounded-lg w-full mb-4 hidden" controls>
+                    <source src="/cisviedo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- Button -->
+                <button onclick="playVideoInsideBox()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg">
+                    <i class="fas fa-play mr-2"></i>
+                    Watch Success Story
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript to control video display -->
+<script>
+    function playVideoInsideBox() {
+        const placeholder = document.getElementById('videoPlaceholder');
+        const video = document.getElementById('successVideo');
+
+        // Hide placeholder
+        placeholder.classList.add('hidden');
+
+        // Show video and play
+        video.classList.remove('hidden');
+        video.play();
+    }
+</script>
+
+    <!-- Pain Points Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Are These Business Threats Putting Your Growth at Risk in 2025?
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Every day you delay automation, your business faces critical risks that cost revenue, customers, and
+                    reputation.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Lost Leads -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-red-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-exclamation-triangle text-red-500 text-2xl mr-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900">Lost Leads & Missed Follow-ups</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Without automation, valuable prospects slip through the cracks. Manual follow-ups are
+                        inconsistent, and competitors end up winning the deals.
+                    </p>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• Missed emails, WhatsApp messages, and calls</li>
+                        <li>• No systematic follow-up process</li>
+                        <li>• Leads turning cold due to delays</li>
+                        <li>• Zero visibility into the sales pipeline</li>
+                    </ul>
+                </div>
+
+                <!-- Data Leaks -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-red-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lock-open text-red-500 text-2xl mr-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900">Risk of Data Leaks</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Manual processes and scattered systems make your data vulnerable. A single mistake can expose
+                        sensitive information and damage trust.
+                    </p>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• Insecure spreadsheets and shared files</li>
+                        <li>• No centralized access control</li>
+                        <li>• Higher risk of human error in data handling</li>
+                        <li>• Vulnerability to cyberattacks</li>
+                    </ul>
+                </div>
+
+                <!-- Missed Sales -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-red-500 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-red-500 text-2xl mr-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900">Missed Sales Opportunities</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Outdated methods and lack of automation slow down your sales cycle. Inefficiency leads to lost
+                        revenue and reduced growth potential.
+                    </p>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• Slow deal tracking and reporting</li>
+                        <li>• Poor customer engagement</li>
+                        <li>• Inconsistent handovers between teams</li>
+                        <li>• Missed upsell and cross-sell opportunities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Solution Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    How Automation Neutralizes the Triple Threat in 2025
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Turn potential risks into growth opportunities by tackling lost leads, data leaks, and missed sales
+                    with automation.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-green-500 rounded-full p-3 flex-shrink-0">
+                            <i class="fas fa-user-check text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">
+                                Never Lose a Lead Again
+                            </h3>
+                            <p class="text-gray-600">
+                                Capture and nurture every prospect automatically with intelligent workflows. No more
+                                missed calls, forgotten follow-ups, or cold leads slipping away.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-500 rounded-full p-3 flex-shrink-0">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">
+                                Protect Your Data
+                            </h3>
+                            <p class="text-gray-600">
+                                Centralized and secure systems prevent leaks caused by scattered spreadsheets or human
+                                errors. Safeguard sensitive information and ensure compliance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-purple-500 rounded-full p-3 flex-shrink-0">
+                            <i class="fas fa-bolt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">
+                                Close More Sales, Faster
+                            </h3>
+                            <p class="text-gray-600">
+                                Streamlined pipelines, real-time visibility, and automated reminders keep deals moving
+                                forward. Eliminate bottlenecks and seize every opportunity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl">
+                    <h4 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+                        Results You Can Expect
+                    </h4>
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-700">Lead Response Time</span>
+                            <span class="text-green-600 font-bold text-xl">90% Faster</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-700">Sales Conversion Rate</span>
+                            <span class="text-green-600 font-bold text-xl">+285%</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-700">Time Saved on Admin</span>
+                            <span class="text-green-600 font-bold text-xl">25 Hours/Week</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-700">Risk of Data Leaks</span>
+                            <span class="text-green-600 font-bold text-xl">Drastically Reduced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Social Proof Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    The Triple Threat to Indian Businesses in 2025
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Without automation, companies risk <span class="font-semibold">losing leads, leaking valuable data,
+                        and missing critical sales opportunities</span>.
+                    Join 1000+ Indian businesses already securing their future with smarter automation.
+                </p>
+            </div>
+
+            <!-- Statistics -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="stats-counter">1000+</div>
+                    <p class="text-gray-600 font-semibold">Indian Businesses Empowered</p>
+                </div>
+                <div class="text-center">
+                    <div class="stats-counter">3X</div>
+                    <p class="text-gray-600 font-semibold">Faster Sales Growth</p>
+                </div>
+                <div class="text-center">
+                    <div class="stats-counter">95%</div>
+                    <p class="text-gray-600 font-semibold">Improved Efficiency</p>
+                </div>
+                <div class="text-center">
+                    <div class="stats-counter">10+</div>
+                    <p class="text-gray-600 font-semibold">Years of Expertise in India</p>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Before automation, we lost countless leads. Since adopting it, our follow-ups are automatic
+                        and our conversions have doubled."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-500 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">RS</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Rohit Sharma</h4>
+                            <p class="text-gray-600">Director, TechNova Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Data leaks were a constant worry. With secure automation tools, we've built client trust
+                        and improved sales by 200% in a single year."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-purple-500 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">PN</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Priya Nair</h4>
+                            <p class="text-gray-600">CEO, Nair Enterprises</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">
+                        "We used to miss opportunities because our sales team was overloaded. Automation freed them
+                        from repetitive tasks, and now deals close faster than ever."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-green-500 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">AM</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Arjun Mehta</h4>
+                            <p class="text-gray-600">Founder, GrowthEdge Consulting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client Logos -->
+            <div class="mt-16">
+                <p class="text-center text-gray-600 mb-8">Trusted by leading Indian businesses:</p>
+                <div class="flex flex-wrap justify-center items-center space-x-8 space-y-4">
+                    <div class="bg-white px-6 py-3 rounded-lg shadow-sm font-bold text-gray-700">TechNova Solutions
+                    </div>
+                    <div class="bg-white px-6 py-3 rounded-lg shadow-sm font-bold text-gray-700">Nair Enterprises</div>
+                    <div class="bg-white px-6 py-3 rounded-lg shadow-sm font-bold text-gray-700">GrowthEdge Consulting
+                    </div>
+                    <div class="bg-white px-6 py-3 rounded-lg shadow-sm font-bold text-gray-700">Sharma & Sons Pvt Ltd
+                    </div>
+                    <div class="bg-white px-6 py-3 rounded-lg shadow-sm font-bold text-gray-700">Innovate India Group
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Case Study Preview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left Content -->
+                    <div>
+                        <div
+                            class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full inline-block mb-6 font-semibold">
+                            Success Story
+                        </div>
+                        <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                            How Innovate India Group Secured 285% Growth in 6 Months
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-8">
+                            Discover how this fast-growing Indian business tackled lost leads, data leaks,
+                            and missed opportunities through automation — and achieved record-breaking results.
+                        </p>
+
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center">
+                                <i class="fas fa-arrow-up text-green-500 mr-3 text-xl"></i>
+                                <span class="text-lg"><strong>285% growth</strong> in sales</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-blue-500 mr-3 text-xl"></i>
+                                <span class="text-lg"><strong>90% faster</strong> lead response time</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-shield-alt text-purple-500 mr-3 text-xl"></i>
+                                <span class="text-lg"><strong>95% improvement</strong> in data security</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-rupee-sign text-green-500 mr-3 text-xl"></i>
+                                <span class="text-lg"><strong>450% ROI</strong> within first year</span>
+                            </div>
+                        </div>
+
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg">
+                            <i class="fas fa-calendar-check mr-2"></i>
+                            Reserve Your Webinar Seat
+                        </button>
+                    </div>
+
+                    <!-- Right Card -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Key Implementation Results</h3>
+
+                        <div class="space-y-6">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Monthly Leads Captured</span>
+                                <div class="flex items-center">
+                                    <span class="text-red-500 line-through mr-2">140</span>
+                                    <span class="text-green-600 font-bold text-xl">520</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Conversion Rate</span>
+                                <div class="flex items-center">
+                                    <span class="text-red-500 line-through mr-2">7%</span>
+                                    <span class="text-green-600 font-bold text-xl">29%</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Average Deal Value</span>
+                                <div class="flex items-center">
+                                    <span class="text-red-500 line-through mr-2">₹12L</span>
+                                    <span class="text-green-600 font-bold text-xl">₹36L</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Time to Close Deal</span>
+                                <div class="flex items-center">
+                                    <span class="text-red-500 line-through mr-2">40 days</span>
+                                    <span class="text-green-600 font-bold text-xl">15 days</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 p-4 bg-blue-50 rounded-lg text-center">
+                            <p class="text-blue-800 font-semibold">
+                                "Automation didn’t just save time — it saved our business. Today, our growth is
+                                unstoppable."
+                            </p>
+                            <p class="text-blue-600 text-sm mt-1">- Anita Verma, CEO, Innovate India Group</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Feature Highlights -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Powerful Features Built for Indian Businesses
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Everything you need to streamline and grow your business — all in one smart CRM platform
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- WhatsApp Integration -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fab fa-whatsapp text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">WhatsApp Integration</h3>
+                    <p class="text-gray-600">Manage customer conversations directly from your CRM in regional languages
+                    </p>
+                </div>
+
+                <!-- Lead Automation -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-robot text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Lead Automation</h3>
+                    <p class="text-gray-600">Capture, qualify, and assign leads automatically from all your digital
+                        channels</p>
+                </div>
+
+                <!-- Built-in Telephony -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+                    <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-phone text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Built-in Telephony</h3>
+                    <p class="text-gray-600">Make, record, and track calls seamlessly with Indian number support</p>
+                </div>
+
+                <!-- Smart Scheduling -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+                    <div class="bg-yellow-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-calendar-alt text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Smart Scheduling</h3>
+                    <p class="text-gray-600">Enable clients to self-book appointments and sync with your calendar</p>
+                </div>
+
+                <!-- Real-time Analytics -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+                    <div class="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Real-time Analytics</h3>
+                    <p class="text-gray-600">Track sales, service, and marketing KPIs with industry-ready dashboards</p>
+                </div>
+
+                <!-- Document Management -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+                    <div class="bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-file-contract text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Document Management</h3>
+                    <p class="text-gray-600">Digitally manage invoices, contracts, and e-signatures with legal
+                        compliance</p>
+                </div>
+
+                <!-- Email & SMS Marketing -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+                    <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-envelope text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Email & SMS Marketing</h3>
+                    <p class="text-gray-600">Send promotional, seasonal, and follow-up campaigns in any regional
+                        language</p>
+                </div>
+
+                <!-- Business Database -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+                    <div class="bg-teal-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-database text-teal-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Business Database</h3>
+                    <p class="text-gray-600">Manage inventory, product info, or service history with easy search and
+                        filters</p>
+                </div>
+
+                <!-- Mobile CRM App -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg cursor-pointer">
+                    <div class="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Mobile CRM App</h3>
+                    <p class="text-gray-600">Access your CRM on-the-go, even in remote or low-connectivity areas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Mid-page CTA -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">
+                Ready to Transform Your Business Operations?
+            </h2>
+            <p class="text-xl mb-8 text-gray-200">
+                Join 500+ Indian businesses across retail, services, education, healthcare, and more who are using
+                Bitrix24 to streamline operations and boost growth.
+                Book your personalized demo today to discover how our all-in-one CRM can work for your business.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button
+                    class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-4 px-8 rounded-lg text-lg pulse-button">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    Book My Free Demo Now
+                </button>
+                <button
+                    class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300">
+                    <i class="fas fa-play mr-2"></i>
+                    Watch Success Stories
+                </button>
+            </div>
+            <p class="text-sm text-gray-300 mt-6">
+                <i class="fas fa-lock mr-1"></i>
+                No obligation • Free 30-minute consultation • India-based support team
+            </p>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Everything you need to know about implementing Bitrix24 CRM for your business in India
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">
+                        <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                        How quickly can we get started with Bitrix24 CRM?
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Most Indian businesses are up and running within 1–2 weeks. Our onboarding includes data
+                        migration,
+                        team onboarding, WhatsApp integration, and workflow setup. We handle the tech while you focus on
+                        growing your business.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">
+                        <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                        Will Bitrix24 integrate with our existing tools and platforms?
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Yes! Bitrix24 integrates with 1000+ apps including Tally, Razorpay, Google Workspace, Shopify,
+                        Zoho,
+                        and more. We ensure your CRM connects seamlessly with your website, accounting, and marketing
+                        tools.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">
+                        <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                        What kind of training and support do you provide?
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        We offer full training through videos, workshops, and one-on-one onboarding sessions. Our
+                        India-based support team provides assistance in English and Hindi with fast response times for
+                        all
+                        technical issues.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">
+                        <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                        How much does Bitrix24 CRM cost in India?
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Plans start at just ₹499/user/month. This includes WhatsApp integration, telephony, email
+                        marketing,
+                        automation, and core CRM features. Our pricing is flexible, and most clients see ROI within
+                        30–60
+                        days of implementation.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">
+                        <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                        Is our data secure and compliant with Indian regulations?
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Absolutely. Bitrix24 meets ISO 27001 and GDPR standards. All data is encrypted and hosted in
+                        secure
+                        data centers. We also align with Indian data protection guidelines to ensure your business
+                        remains
+                        secure and compliant.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                Don't Let Another Lead Slip Away
+            </h2>
+            <p class="text-xl mb-8 text-gray-200 leading-relaxed">
+                Every day you delay implementing a powerful CRM system, you're losing valuable leads to competitors
+                already using automation and digital tools. The Indian market is competitive — give your team the tech
+                advantage they need to grow faster.
+            </p>
+
+            <!-- Demo Form -->
+            <div class="bg-white rounded-2xl p-8 mb-8 text-gray-900">
+                <h3 class="text-2xl font-bold mb-6">Get Your Free Personalized Demo</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                        <input type="text"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Company Name *</label>
+                        <input type="text"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="Your company name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                        <input type="email"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="your@email.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Phone Number *</label>
+                        <input type="tel"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="+91 98765 43210">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Team Size</label>
+                        <select
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option>Select your team size</option>
+                            <option>1–5 members</option>
+                            <option>6–15 members</option>
+                            <option>16–30 members</option>
+                            <option>31–50 members</option>
+                            <option>50+ members</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg mt-6 pulse-button">
+                    <i class="fas fa-rocket mr-2"></i>
+                    Book My Free Demo & Get Custom Quote
+                </button>
+
+                <!-- Security Notice -->
+                <div class="flex items-center justify-center mt-4 text-sm text-gray-600">
+                    <i class="fas fa-shield-alt text-green-500 mr-2"></i>
+                    <span>Your information is 100% secure and will never be shared</span>
+                </div>
+            </div>
+
+            <!-- Feature Highlights -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <i class="fas fa-calendar-check text-3xl text-yellow-400 mb-3"></i>
+                    <h4 class="font-bold mb-2">30-Minute Demo</h4>
+                    <p class="text-gray-300 text-sm">Tailored to your business and industry</p>
+                </div>
+                <div>
+                    <i class="fas fa-headset text-3xl text-yellow-400 mb-3"></i>
+                    <h4 class="font-bold mb-2">India-Based Support</h4>
+                    <p class="text-gray-300 text-sm">Support in English, Hindi & regional languages</p>
+                </div>
+                <div>
+                    <i class="fas fa-dollar-sign text-3xl text-yellow-400 mb-3"></i>
+                    <h4 class="font-bold mb-2">Custom Pricing</h4>
+                    <p class="text-gray-300 text-sm">Plans that scale with your budget</p>
+                </div>
+            </div>
+
+            <!-- Urgency Note -->
+            <p class="text-sm text-gray-300 mt-8">
+                <i class="fas fa-clock mr-1"></i>
+                Limited slots available • Book within 48 hours to secure your preferred time
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Corporate Intellect Solutions</h3>
+                    <p class="text-gray-400 mb-4">
+                        India’s leading Bitrix24 implementation partner, transforming real estate and business
+                        operations since 2019.
+                    </p>
+                    <div class="flex space-x-4">
+                        <i class="fab fa-linkedin text-blue-400 text-xl"></i>
+                        <i class="fab fa-twitter text-blue-400 text-xl"></i>
+                        <i class="fab fa-facebook text-blue-400 text-xl"></i>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Bitrix24 CRM Implementation</li>
+                        <li>WhatsApp Integration</li>
+                        <li>Sales Process Automation</li>
+                        <li>Team Training & Support</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Industries We Serve</h4>
+                    <ul class="space-y-2 text-gray-400">
+
+                        <li>Property Brokerage</li>
+                        <li>Hospitality & Hotels</li>
+                        <li>Facility Management</li>
+                        <li>Financial Services & Mortgage</li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-phone mr-2"></i> +91 1234 567 890</p>
+                        <p><i class="fas fa-envelope mr-2"></i> info@corporateintellect.in</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> India</p>
+                        <p><i class="fab fa-whatsapp mr-2"></i> +91 98765 43210</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Corporate Intellect Solutions. All rights reserved. | Privacy Policy | Terms of Service
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form validation
+        document.querySelector('button[type="submit"]')?.addEventListener('click', function (e) {
+            const requiredFields = document.querySelectorAll('input[required]');
+            let isValid = true;
+
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    field.classList.remove('border-red-500');
+                }
+            });
+
+            if (!isValid) {
+                e.preventDefault();
+                alert('Please fill in all required fields');
+            }
+        });
+
+        // Counter animation for statistics
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stats-counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent.replace(/\D/g, ''));
+                let current = 0;
+                const increment = target / 100;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = counter.textContent.replace(/\d+/, target);
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = counter.textContent.replace(/\d+/, Math.floor(current));
+                    }
+                }, 20);
+            });
+        }
+
+        // Trigger counter animation when section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('.stats-counter').closest('section');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+    </script>
+</body>
+
+</html>
